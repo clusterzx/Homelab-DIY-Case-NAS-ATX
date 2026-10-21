@@ -186,25 +186,6 @@ The [assembly guide](docs/Assembly_Guide_V4.pdf) shows every step. In short:
    then display, button and case fans, board, cards and slot cover, top plate with thumb screws.
 4. Drives into the trays, slide them in until they click.
 
-## What was checked and what was not
-
-Checked in the parametric model (Blender/Python): no collisions between any printed parts, bought parts, screws and
-plug envelopes (pairwise checks between all of them), every screw ends in an insert with material around it, every
-long screw is reachable with a straight key, the backplane holder is free over its whole adjustment range, the drive fan cable
-passes under the holder, PSU modular plugs (30 mm zone), mains plug and the cable path up to the board are free, trays
-and drives pull out without hitting anything, every part is one solid body without unsupported flat overhangs.
-
-Not verified on real hardware for v1.0:
-- **Backplane connector position:** not dimensioned in the vendor drawings. The holder is adjustable for this reason.
-  If a drive latches but does not seat fully, the drive-to-backplane depth is off (not adjustable).
-- **Board standoffs** follow the microATX standard, except hole **S** (the board this was built for has a coil there)
-  and an extra plain support (no insert) under a non-standard hole near the front corner on the slot side, measured
-  from a photo (±1.5 mm). If your board has hole S, glue in a 10 mm M3 standoff; if the support hits a part on your
-  board, cut it off.
-- **ATX PSU:** outline and holes from the Intel ATX design guide; inlet and switch are inside the large rear cut-out.
-- **Switch bezel (option B):** sized from measured estimates of the switch (body Ø 20 mm, ring
-  Ø 25 mm, clips behind a 1.5 mm panel). It is a 4 g print, so print it and try.
-- **Insert hole size** 4 mm: use the test print.
 
 ## Version history
 
